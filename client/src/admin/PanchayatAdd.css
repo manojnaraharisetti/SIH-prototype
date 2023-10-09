@@ -1,0 +1,36 @@
+.panchayatadd_container{
+    max-width: 600px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;    
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.panchayatadd_input{
+    max-width: 500px;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+.panchayatadd_label{
+    margin-left: 30px;
+}
+.panchayatadd_file{
+    margin-left: 30px;
+}
+.panchayatadd_select{
+    margin-left: 30px;
+    max-width: 500px;
+}
+.panchayatadd_radio {
+    margin-left: 30px;
+}
+.panchayatadd_submit{
+    width: 150px;
+    align-items: center;
+    margin-left: 200px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+}

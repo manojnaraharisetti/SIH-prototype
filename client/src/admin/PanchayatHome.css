@@ -1,0 +1,42 @@
+     /* Add your custom CSS styles here */
+      /* For Bootstrap styles, you can include the Bootstrap CSS file */
+
+      /* Example custom styles */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .panchayat-nav {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 0;
+      }
+
+      .panchayat-nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 18px;
+      }
+
+      .panchayat-nav a:hover {
+        text-decoration: underline;
+      }
+
+      .panchayat-card {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .panchayat-card-title {
+        font-size: 1.25rem;
+      }
+
+      .panchayat-card-title i {
+        color: #007bff;
+      }

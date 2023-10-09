@@ -1,0 +1,73 @@
+.container {
+  margin-top: 20px;
+}
+
+/* Table header styles */
+.table-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; /* Add padding to the header */
+  background-color: #f0f0f0; /* Background color for the header */
+  border-radius: 8px; /* Rounded corners for the header */
+}
+
+/* Search input styles */
+.p-input-icon-left {
+  margin-bottom: 10px; /* Add margin to the search input */
+}
+
+/* DataTable styles */
+.p-datatable {
+  width: 100%; /* Make the table expand to its container's width */
+  border-collapse: collapse; /* Remove table borders */
+  margin: 20px;
+  border: 1px solid #ddd;
+}
+
+/* DataTable header styles */
+.p-datatable thead {
+  background-color: #007bff; /* Header background color */
+  color: #fff; /* Header text color */
+}
+
+/* DataTable cell styles */
+.p-datatable td,
+.p-datatable th {
+  padding: 12px; /* Add padding to table cells */
+  text-align: center; /* Center-align cell content */
+  text-align: center;
+}
+
+/* DataTable cell hover styles */
+/* .p-datatable tbody tr:hover {
+  background-color: #d4d4d4;
+} */
+
+/* Action buttons styles */
+.action-buttons button {
+  margin-right: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.action-buttons button:hover {
+  background-color: #0056b3;
+}
+
+/* Empty message styles */
+.p-datatable .p-datatable-emptymessage {
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.p-datatable tbody tr{
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2); /* Glassmorphism-style box shadow */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Add smooth transition effect */
+}

@@ -1,0 +1,269 @@
+/* Custom background image with blur effect */
+:root {
+  --color-secondary: green;
+}
+body {
+  /* background-image: url('jammumap.jpg'); Replace with your background image URL */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* This keeps the background fixed while scrolling */
+  backdrop-filter: blur(7px);
+  font-family: "Roboto Slab", serif;
+}
+/* Image at the top of the page */
+.top-image img {
+  background-size: cover;
+  background-position: center;
+  height: 25vh; /* 20% of viewport height */
+  width: 100%;
+  position: relative;
+  filter: blur(3px);
+}
+
+/* Image in Section 1 */
+.section-1-image {
+  background-image: url("https://static.theprint.in/wp-content/uploads/2022/09/ANI-20220927110726.jpg"); /* Replace with your section 1 image URL */
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  /* position: absolute;
+        top: -35%;
+        left: 0; */
+  /* z-index: 1; Place the section 1 image above the top image */
+}
+
+.section3cont img {
+  border-radius: 4px;
+}
+/* Custom background colors for each section */
+.section-1,
+.section-2,
+.section-3 {
+  background-color: transparent;
+  padding: 20px;
+  color: rgb(206, 91, 91);
+}
+
+.section-image {
+  background-size: cover;
+  background-position: center;
+  height: 300px; /* Adjust the height as needed */
+  width: 100%;
+  margin-top: -50px;
+}
+
+.img-fluid {
+  height: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+.section3cont img {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+  border: 5px solid rgb(251, 178, 178);
+  padding: 5px;
+}
+
+/* Media query for larger screens */
+@media (max-width: 767px) {
+  .section-images-container {
+    grid-template-columns: 1fr 3fr; /* 1/4 and 3/4 column layout */
+  }
+  .section-image {
+    background-image: none; /* Remove the background image */
+    background-color: transparent; /* Make the background transparent */
+  }
+}
+
+.section-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+  border: 5px solid rgb(255, 255, 255);
+  padding: 5px;
+}
+
+.districttext h2 {
+  color: var(--color-secondary);
+  text-transform: capitalize;
+}
+.districttext p {
+  color: black;
+}
+.producttext h2 {
+  color: var(--color-secondary);
+  text-transform: capitalize;
+}
+.producttext p {
+  color: black;
+}
+.iframemap iframe {
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 1); */
+  /* border: 5px solid rgb(251, 178, 178); */
+  border-radius: 10px;
+  padding: 5px;
+}
+hr {
+  color: #333;
+  background-color: #333;
+  height: 1px;
+  border: none;
+}
+
+.small-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0; /* Add your desired background color */
+  border: 1px solid #000; /* Black border */
+  margin: 10px; /* Add margin to create space between cards (adjust as needed) */
+  padding: 10px; /* Add padding for inner content (adjust as needed) */
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for card icon */
+.small-card .icon {
+  font-size: 24px; /* Adjust the font size as needed */
+  color: var(--color-secondary);
+}
+
+/* Style for card name */
+.small-card .name {
+  font-size: 18px;
+  margin: 5px 0; /* Add margin to separate name and count */
+  /* margin-left: 40px; */
+}
+
+/* Style for card count */
+.small-card .count {
+  font-size: 16px;
+  color: #666;
+  /* margin-left: 18px; */
+}
+
+/* cards */
+
+.sellercardcontainer .cards::-webkit-scrollbar {
+  width: 0;
+}
+:root {
+  --orange: #fd9940;
+  --darkorange: #dd7d25;
+  --platinum: #e5e5e5;
+  --black: #2b2d42;
+  --white: #fff;
+  --thumb: #edf2f4;
+}
+
+.sellercardcontainer {
+  max-width: 1400px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 1em;
+  color: var(--color-secondary);
+}
+
+.sellercardcontainer .cards {
+  display: grid;
+  grid-auto-columns: 100%;
+  grid-column-gap: 10px;
+  grid-auto-flow: column;
+  padding: 25px 0px;
+  list-style: none;
+  overflow-x: scroll;
+  overflow-y: hidden; /* Hide the vertical scrollbar */
+  scroll-snap-type: x mandatory;
+}
+
+.sellercardcontainer .card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+  scroll-snap-align: start;
+  transition: all 0.2s;
+  background-color: #f0f0f0;
+}
+
+.sellercardcontainer .card:hover {
+  color: var(--color-secondary);
+  box-shadow: 0px 0px 10px rgba(5, 5, 5, 0.2);
+}
+
+.sellercardcontainer .card .card-title {
+  font-size: 20px;
+}
+
+.sellercardcontainer .card .card-content {
+  margin: 20px 0;
+  max-width: 85%;
+}
+
+.sellercardcontainer .card .card-link-wrapper {
+  margin-top: auto;
+}
+
+.sellercardcontainer .card .card-link {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-secondary);
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.sellercardcontainer .cards::-webkit-scrollbar {
+  height: 12px;
+}
+
+.sellercardcontainer .cards::-webkit-scrollbar-thumb,
+.sellercardcontainer .cards::-webkit-scrollbar-track {
+  border-radius: 92px;
+}
+
+.sellercardcontainer .cards::-webkit-scrollbar-thumb {
+  color: var(--color-secondary);
+}
+
+.sellercardcontainer .cards::-webkit-scrollbar-track {
+  background: var(--thumb);
+}
+
+@media (min-width: 500px) {
+  .sellercardcontainer .cards {
+    grid-auto-columns: calc(50% - 10px);
+    grid-column-gap: 20px;
+  }
+}
+
+@media (min-width: 700px) {
+  .sellercardcontainer .cards {
+    grid-auto-columns: calc(calc(100% / 3) - 20px);
+    grid-column-gap: 30px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .sellercardcontainer .cards {
+    grid-auto-columns: calc(25% - 30px);
+    grid-column-gap: 40px;
+  }
+}
+
+.card-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+.card-image img:hover {
+  height: auto;
+  box-shadow: 0px 0px 10px rgba(0, 106, 62, 0.2);
+}

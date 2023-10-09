@@ -1,0 +1,10 @@
+.mapdisplay h1{
+  color: green;
+  font-weight: bold;
+  font-size: x-large;
+  margin-left: 30px;
+}
+.text-right p{
+    text-align: justify;
+    margin-left: 80px;
+}

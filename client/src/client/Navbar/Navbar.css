@@ -1,0 +1,72 @@
+/* navbar.css */
+
+/* Center-align the navbar items */
+
+:root {
+  --color-secondary: green;
+}
+.navbar-nav {
+  margin: 0 auto; /* Center-align the navbar items */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_body {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar {
+  background-color: var(--color-secondary);
+}
+.collapsebutton {
+  color: white;
+}
+
+/* Customize the navbar brand link */
+.navbar-brand {
+  color: #ffffff;
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Customize the navbar links */
+.navbar-nav .nav-link {
+  color: #ffffff; /* Text color */
+  text-align: center; /* Center-align text */
+  padding: 0 15px;
+  font-size: 1.5em;
+  font-weight: bold;
+  position: relative; /* Required for the underline animation */
+  transition: all 0.3s ease; /* Smooth transition for the animation */
+  margin-right: 20px;
+}
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0.55);
+}
+/* Add the underline effect on hover */
+.navbar-nav .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff; /* Underline color */
+  transition: width 0.3s ease; /* Animation duration and easing */
+  font-weight: bold;
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: #fffbfb;
+  border: 1px solid white;
+  border-radius: 0.25rem;
+}
+
+.navbar-nav .nav-link:hover::before {
+  width: 100%; /* Expand the underline on hover */
+}
