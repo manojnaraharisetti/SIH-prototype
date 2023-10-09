@@ -18,7 +18,6 @@ import About from "./client/About/About";
 import RouteMaps from "./client/RoutingMaps/RouteMaps";
 import Docs from "./client/Docs";
 import { useState } from "react";
-import ImageView from "./client/360degimage/ImageView";
 
 function App() {
   let languageStoredInLocalStorage = localStorage.getItem("language");
@@ -54,7 +53,6 @@ function App() {
             <Route path="/selfprofile" element={<SelfProfile />} />
             <Route path="/about" element={<About />} />
             <Route path="/docs" element={<Docs />} />
-            <Route path="/image" element={<ImageView />} />
 
           </Routes>
         </CustomProvider>
